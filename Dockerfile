@@ -13,6 +13,7 @@ wget \
 python3 \
 python3-pip \
 unzip \
+iceweasel \
 geany \
 menu && \
 pip3 install numpy && \
