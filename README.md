@@ -14,6 +14,7 @@ Two ways to utilize the project
 2. If you want to modify things in the Dockerfile and add few more packages or simply laugh at how I code
 
   a. Clone the Dockerfile and startup.sh script
+  
   b. docker build -t <your_kali_image> . 
   ```bash
   docker build -t kalibrowser .
@@ -28,15 +29,19 @@ Two ways to utilize the project
  **Note** If you made few changes in the dockerfile and now want to publish a version of your own docker image, follow along
  
     a. Navigate to Docker Hub create a Docker ID and select the personal subscription.
+    
     b. Using docker login from the CLI, sign in using your original Docker ID and pull your private images.
+    
     c. Tag your private images with your newly created Docker ID using: 
     ```bash
     docker tag kalibrowser:v1 apsychogirll/kalibrowser:v1
     ```
+    
     d. Using docker login from the CLI, sign in with your newly created Docker ID, and push your newly tagged private images to your new Docker ID namespace. 
     ```bash 
     docker push apsychogirll/kalibrowser:v1
     ```
+    
     e. The private images that existed in your previous namespace are now available in your new Docker ID namespace.
     
   OR Better refer the docker official documentation :P
